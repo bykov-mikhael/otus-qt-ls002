@@ -24,7 +24,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #    endif()
 #endif()
 
-find_package(Qt5 COMPONENTS Widgets REQUIRED)
+find_package(Qt5 COMPONENTS Widgets Gui Core REQUIRED)
 
 if(ANDROID)
   add_library(hw-002 SHARED
@@ -32,6 +32,8 @@ if(ANDROID)
     mainwindow.cpp
     mainwindow.hpp
     mainwindow.ui
+    myswitch.cpp
+    myswitch.hpp
   )
 else()
   add_executable(hw-002
@@ -39,7 +41,9 @@ else()
     mainwindow.cpp
     mainwindow.hpp
     mainwindow.ui
+    myswitch.cpp
+    myswitch.hpp
   )
 endif()
 
-target_link_libraries(hw-002 PRIVATE Qt5::Widgets)
+target_link_libraries(hw-002 PRIVATE Qt5::Widgets Qt5::Core Qt5::Gui)

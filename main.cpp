@@ -1,3 +1,4 @@
+#include <myswitch.hpp>
 #include "mainwindow.hpp"
 
 #include <QApplication>
