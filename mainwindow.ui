@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>453</width>
-    <height>470</height>
+    <width>43</width>
+    <height>44</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,33 +20,20 @@
      <height>197</height>
     </size>
    </property>
-   <widget class="MySwitch" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>119</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(170, 255, 255);</string>
-    </property>
-   </widget>
    <widget class="MyStar" name="star" native="true">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>80</y>
-      <width>50</width>
-      <height>50</height>
+      <x>10</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 127);
@@ -56,12 +43,6 @@ border-color: rgb(0, 0, 0);</string>
   </widget>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>MySwitch</class>
-   <extends>QWidget</extends>
-   <header>myswitch.hpp</header>
-   <container>1</container>
-  </customwidget>
   <customwidget>
    <class>MyStar</class>
    <extends>QWidget</extends>
