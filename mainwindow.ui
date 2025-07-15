@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>163</width>
-    <height>94</height>
+    <width>453</width>
+    <height>470</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,7 +26,7 @@
       <x>20</x>
       <y>20</y>
       <width>119</width>
-      <height>49</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -39,6 +39,20 @@
      <string notr="true">background-color: rgb(170, 255, 255);</string>
     </property>
    </widget>
+   <widget class="MyStar" name="star" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-color: rgb(0, 0, 0);</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <customwidgets>
@@ -46,6 +60,12 @@
    <class>MySwitch</class>
    <extends>QWidget</extends>
    <header>myswitch.hpp</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MyStar</class>
+   <extends>QWidget</extends>
+   <header>mystar.hpp</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

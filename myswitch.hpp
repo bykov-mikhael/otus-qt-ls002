@@ -28,7 +28,8 @@ class MySwitch : public QPushButton {
                               : QTimeLine::Forward);
       m_timeLine.start();
     });
-    connect(m_timeLine, &QTimeLine::valueChanged, [this](qreal) { update(); });
+
+    connect(&m_timeLine, &QTimeLine::valueChanged, [this](qreal) { update(); });
   }
 
   void paintEvent(QPaintEvent *event) {

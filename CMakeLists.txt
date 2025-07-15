@@ -34,6 +34,8 @@ if(ANDROID)
     mainwindow.ui
     myswitch.cpp
     myswitch.hpp
+    mystar.cpp
+    mystar.hpp
   )
 else()
   add_executable(hw-002
@@ -43,6 +45,8 @@ else()
     mainwindow.ui
     myswitch.cpp
     myswitch.hpp
+    mystar.cpp
+    mystar.hpp
   )
 endif()
 
